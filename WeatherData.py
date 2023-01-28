@@ -2,12 +2,9 @@ import requests
 import os
 from datetime import datetime
 
-API_key = "566453ba75ffddff59027dd34360d9fa"
-#user_api = os.environ['API_key']
+user_api = os.environ['API_key']
 
 loc = input('Enter the city name:\t')
-#https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-
 
 link = f"https://api.openweathermap.org/data/2.5/weather?q={loc}&appid={API_key}"
 
